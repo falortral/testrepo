@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Only Testing</h1>
+
+    <div id="container">
+        <p id="valueField">"p"</p>
+        <table>
+            <tr>
+                <td><button id="buttonOne">1</button></td>
+                <td><button id="buttonTwo">2</button></td>
+                <td><button id="buttonThree">3</button></td>
+                <td><button id="buttonPlus">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="buttonFour">4</button></td>
+                <td><button id="buttonFive">5</button></td>
+                <td><button id="buttonSix">6</button></td>
+                <td><button id="buttonMinus">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="buttonSeven">7</button></td>
+                <td><button id="buttonEight">8</button></td>
+                <td><button id="buttonNine">9</button></td>
+                <td><button id="buttonMultiply">*</button></td>
+            </tr>
+            <tr>
+                <td><button id="buttonZero">0</button></td>
+                <td colspan="2"><button id="buttonEqual">=</button></td>
+                <td><button id="buttonDivide">/</button></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script>
+        let buttons = document.querySelectorAll("button");
+        let valueField = document.querySelector('#valueField');
+        console.log(buttons);
+        addEventListener("click", clickButtons);
+
+        function clickButtons(buttons) {
+            for (let k in buttons) {
+                console.log(buttons[k]);
+            }
+        }
+
+    </script>
+</body>
+</html>
